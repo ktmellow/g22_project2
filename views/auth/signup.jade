@@ -1,0 +1,14 @@
+extends ../layout.jade
+
+block content
+  p
+    a(href="/auth/login") Return
+  form(action="/auth/signup" method="POST") 
+    p
+      label Username
+      input(type="text" name="user[username]" autofocus)
+    p
+      label Password
+      input(type="password" name="user[password]")
+    p
+      input(type="submit" value="Sign Up")
